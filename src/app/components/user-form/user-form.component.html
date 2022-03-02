@@ -27,8 +27,10 @@
                         <label for="email">Email</label>
                         <input [(ngModel)]="userData.email" class="form-control" id="email" type="email" name="Email">
                     </div>
-                    <button (click)="submitButtonClicked()" class="btn btn-primary submit-button"
+                    <button *ngIf="!condition" (click)="submitButtonClicked()" class="btn btn-primary submit-button"
                         type="submit">Submit</button>
+                    <button *ngIf="condition" (click)="submitButtonClicked(); resetButtonClicked()" class="btn btn-primary submit-button"
+                        type="reset">Reset</button>
                 </form>
             </div>
         </div>
@@ -36,14 +38,15 @@
 
 
         <div *ngIf="condition" class="col-md-4">
-            <h1 class="text-center font-color">OUTPUT</h1> 
+            <h1 class="text-center font-color">OUTPUT</h1>
             <div class="output">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://i.dlpng.com/static/png/7105395_preview.png" alt="Card image cap">
+                    <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/219/219983.png"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">{{userData.firstName}} {{userData.lastName}} </h5>
                         <h6>DOB: {{userData.dob | date}}</h6>
-                        <p>Email: {{userData.email}}</p>
+                        <h6>Email: {{userData.email}}</h6>
                     </div>
                 </div>
             </div>

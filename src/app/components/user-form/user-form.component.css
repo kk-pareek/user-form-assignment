@@ -6,6 +6,10 @@
 .form-control {
     background-color: var(--light-background);
     border: solid var(--base-color-level-two) 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0%;
 }
 
 .submit-button {
@@ -24,7 +28,19 @@
     justify-content: center;
 }
 
-/* .card {
+label {
+    color: var(--base-color-level-two);
+    font-weight: 500;
+}
+
+.card {
     display: flex;
     justify-content: center;
-} */
+    align-items: center;
+}
+
+img {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+}

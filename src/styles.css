@@ -21,3 +21,7 @@ body {
     --font-family-level-two: 'Lato', sans-serif;
 }
 
+/* a {
+    text-decoration: none;
+    font-family: var(--font-family-level-one);
+} */

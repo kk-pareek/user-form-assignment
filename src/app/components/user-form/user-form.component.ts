@@ -21,4 +21,11 @@ export class UserFormComponent implements OnInit {
     this.condition = !this.condition;
   }
 
+  resetButtonClicked() {
+    this.userData.firstName = '';
+    this.userData.lastName = '';
+    this.userData.dob = '';
+    this.userData.email = '';
+  }
+
 }
