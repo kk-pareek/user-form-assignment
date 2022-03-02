@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-sm">
+    <a href="#" class="navbar-brand font-color logo">AngularTraining</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="" id="home" class="nav-link font-color">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link font-color" data-toggle="dropdown" href="">Apps</a>
+                <ul class="dropdown-menu text-center" role="menu" aria-labelledby="dLabel">
+                    <li><a class="font-color dropdown-link" href="#">TODO APP</a></li>
+                    <li class="divider"></li>
+
+                    <li><a class="font-color dropdown-link" href="#">Counter APP</a></li>
+                    <li class="divider"></li>
+                    
+                    <li><a class="font-color dropdown-link" href="#">Learn Styles</a></li>
+                    <li class="divider"></li>
+
+                    <li><a class="font-color dropdown-link" href="#">Ng Templates</a></li>
+                    <li class="divider"></li>
+
+                    <li><a class="font-color dropdown-link" [routerLink]="['/directives']">Directives</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>

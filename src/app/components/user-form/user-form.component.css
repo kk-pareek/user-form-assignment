@@ -1,0 +1,30 @@
+
+.container {
+    margin-top: 20px;
+}
+
+.form-control {
+    background-color: var(--light-background);
+    border: solid var(--base-color-level-two) 2px;
+}
+
+.submit-button {
+    margin-top: 10px;
+    background-color: var(--base-color-level-two);
+    border: none;
+}
+
+.font-color {
+    color: var(--base-color-level-two);
+}
+
+.output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .card {
+    display: flex;
+    justify-content: center;
+} */

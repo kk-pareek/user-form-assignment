@@ -1,0 +1,43 @@
+nav {
+    background-color: var(--base-color-level-two);
+}
+
+.font-color {
+    color: var(--font-color-level-two);
+    font-weight: 600;
+}
+
+.nav-item {
+    transition: 1s all ease;
+    margin: 7px;
+}
+
+.nav-item:hover {
+    background-color: var(--base-color-level-three);
+    border-radius: 25%;
+    /* transform: scale(1.1);
+transition: 0.8s all ease; */
+}
+
+.nav-item:hover .font-color {
+    color: var(--base-color-level-two);
+}
+
+.navbar-brand {
+    transition: 0.2s all ease;
+    margin-left: 15px;
+    text-decoration: underline var(--base-color-level-three) 2px;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+    transition: 0.5s all ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dropdown-link {
+    text-decoration: underline 1px;
+}
